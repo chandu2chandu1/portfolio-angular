@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { ContactService } from './contact.service';
 
 @Component({
   selector: 'app-contact',
@@ -11,23 +12,29 @@ import { FormsModule } from '@angular/forms';
   standalone: true,
 })
 export class Contact {
-  contact = { name: '', email: '', message: '' };
-  messageSent = false;
+  contact = {
+    name: '',
+    email: '',
+    subject: '',
+    message: '',
+  };
+
+  successMessage = '';
   errorMessage = '';
 
-  constructor(private http: HttpClient) {}
+  constructor(private contactService: ContactService) {}
 
   submitForm() {
-    const endpoint = 'http://localhost:8000/contact';
-    this.http.post(`${endpoint}`, this.contact).subscribe({
+    this.contactService.sendMessage(this.contact).subscribe({
       next: () => {
-        this.messageSent = true;
-        this.contact = { name: '', email: '', message: '' };
+        this.successMessage = 'Message sent successfully!';
+        this.errorMessage = '';
+        this.contact = { name: '', email: '', subject: '', message: '' };
       },
-      error: (error) => {
-        this.errorMessage = 'Message could not be sent.';
-        this.messageSent = false;
-        console.error('Error sending contact form:', error);
+      error: (err) => {
+        this.errorMessage = 'Failed to send message. Please try again.';
+        this.successMessage = '';
+        console.error(err);
       },
     });
   }
