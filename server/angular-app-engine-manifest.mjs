@@ -1,6 +1,6 @@
 
 export default {
-  basePath: 'https://chandu2chandu1.github.io/portfolio-angular',
+  basePath: '/portfolio-angular',
   supportedLocales: {
   "en-US": ""
 },

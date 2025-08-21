@@ -4,7 +4,7 @@ export default `<!doctype html>
 <head>
   <meta charset="utf-8">
   <title>Chandra's Portfolio</title>
-  <base href="https://chandu2chandu1.github.io/portfolio-angular/">
+  <base href="/portfolio-angular/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 <link rel="stylesheet" href="styles-H25BRYG6.css"></head>
