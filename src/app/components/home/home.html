@@ -1,66 +1,104 @@
-<!-- <div class="text-center py-10 px-6">
-  <h1 class="text-4xl font-bold text-blue-700">Hi, I'm Chandra Sekhar 👋</h1>
-  <p class="text-lg text-gray-700 mt-4 max-w-2xl mx-auto">
-    A Full Stack Developer skilled in Node.js, PYTHON, Angular, JavaScript, TypeScript, and MongoDB. I create modern,
-    scalable web apps — all through async communication. No calls, just clean code and delivery.
-  </p>
+<!-- Hero Section -->
+<section class="relative isolate overflow-hidden bg-gradient-to-r from-indigo-600 via-indigo-500 to-indigo-700">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-6xl py-4 sm:py-8 lg:py-12">
 
-  <div class="mt-6 space-x-4">
-    <a routerLink="/projects" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded">View Projects</a>
-    <a routerLink="/contact" class="border border-blue-600 text-blue-600 px-4 py-2 rounded hover:bg-blue-50">Contact
-      Me</a>
-  </div>
-</div> -->
-
-<!-- Hero / Elevator Pitch -->
-<section class="relative overflow-hidden bg-gradient-to-br from-indigo-600 via-indigo-500 to-blue-500 text-white">
-  <div class="mx-auto max-w-6xl px-6 py-16 md:py-20">
-    <div class="grid items-center gap-8 md:grid-cols-2">
-      <div>
-        <h1 class="text-3xl font-extrabold leading-tight sm:text-4xl md:text-5xl">
-          Chandra Sekhar — Full-Stack Engineer
-        </h1>
-        <p class="mt-4 text-lg md:text-xl text-indigo-50">
-          I build modern, enterprise-grade web apps with <span class="font-semibold">Angular</span>,
-          <span class="font-semibold">Node.js</span>, and <span class="font-semibold">Python (FastAPI)</span> — turning
-          complex ideas into
-          scalable, performant, and user-friendly products.
-        </p>
-
-        <div class="mt-6 flex flex-wrap gap-3">
-          <a routerLink="/projects"
-            class="inline-flex items-center rounded-lg bg-white px-4 py-2.5 font-medium text-indigo-700 shadow hover:shadow-md hover:bg-indigo-50 transition">
-            View Projects
-          </a>
-          <a routerLink="/contact"
-            class="inline-flex items-center rounded-lg border border-white/70 px-4 py-2.5 font-medium text-white hover:bg-white/10 transition">
-            Contact Me
-          </a>
+      <!-- Flex row: Photo + Text -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-0 items-center">
+        <!-- Profile Photo -->
+        <div class="flex justify-start">
+          <img src="profile-pic.jpg"
+            alt="Chandra Sekhar's profile picture - Relaxing and smiling, while seated and enjoying the nature"
+            class="w-48 h-48 object-cover rounded-full shadow-xl border-4 border-white max-w-full">
         </div>
-      </div>
-
-      <!-- Optional hero illustration / placeholder -->
-      <div class="hidden md:block">
-        <div class="rounded-2xl bg-white/10 backdrop-blur p-6 shadow-xl ring-1 ring-white/20">
-          <ul class="space-y-3 text-indigo-50">
-            <li class="flex items-start gap-3">
-              <span class="mt-1 inline-block h-2 w-2 rounded-full bg-emerald-300"></span>
-              <span><strong>18+ years</strong> building ERP, CRM & HR solutions</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <span class="mt-1 inline-block h-2 w-2 rounded-full bg-emerald-300"></span>
-              <span><strong>App modernization</strong> & cloud-ready architectures</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <span class="mt-1 inline-block h-2 w-2 rounded-full bg-emerald-300"></span>
-              <span><strong>Clean, maintainable code</strong> and on-time delivery</span>
-            </li>
-          </ul>
+        <!-- Text Section -->
+        <div class="flex justify-start">
+          <div class="text-left text-white m-0 p-0">
+            <h1 class="text-4xl font-bold tracking-tight sm:text-5xl m-0">
+              Hi, I’m <span class="underline decoration-yellow-400">Chandra Sekhar</span>
+            </h1>
+            <div class="mt-2 text-lg leading-8">
+              <p class="m-0">
+                A Full-Stack Engineer with 18+ years of experience in enterprise applications,
+                specializing in <span class="font-semibold">Python, Angular, and Node.js</span>.
+              </p>
+              <p class="m-0">
+                I build modern, scalable, and user-friendly solutions for businesses worldwide,
+                turning complex ideas into performant and maintainable products.
+              </p>
+            </div>
+            <div class="mt-4 flex gap-4">
+              <a routerLink="/projects"
+                class="rounded-lg bg-white px-6 py-3 text-indigo-700 font-medium shadow hover:bg-gray-100 transition">
+                View Projects
+              </a>
+              <a routerLink="/contact"
+                class="rounded-lg border border-white px-6 py-3 text-white font-medium hover:bg-indigo-500 transition">
+                Contact Me
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
+
+<!-- <section class="relative overflow-hidden bg-gradient-to-br from-indigo-600 via-indigo-500 to-blue-500 text-white">
+  <div class="mx-auto max-w-6xl px-6 py-16 md:py-20">
+    <div class="grid items-center gap-8 md:grid-cols-2">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+        <div class="flex justify-center md:justify-end">
+          <img src="profile-pic.jpg" alt="Chandra Sekhar Profile Picture"
+            class="w-56 h-56 object-cover rounded-full shadow-lg border-4 border-indigo-100">
+        </div>
+
+        <h1 class="text-3xl font-extrabold leading-tight sm:text-4xl md:text-5xl">
+          Chandra Sekhar — Full-Stack Engineer
+        </h1>
+      </div>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+      <p class="mt-4 text-lg md:text-xl text-indigo-50">
+        I build modern, enterprise-grade web apps with <span class="font-semibold">Angular</span>,
+        <span class="font-semibold">Node.js</span>, and <span class="font-semibold">Python (FastAPI)</span> — turning
+        complex ideas into
+        scalable, performant, and user-friendly products.
+      </p>
+
+      <div class="mt-6 flex flex-wrap gap-3">
+        <a routerLink="/projects"
+          class="inline-flex items-center rounded-lg bg-white px-4 py-2.5 font-medium text-indigo-700 shadow hover:shadow-md hover:bg-indigo-50 transition">
+          View Projects
+        </a>
+        <a routerLink="/contact"
+          class="inline-flex items-center rounded-lg border border-white/70 px-4 py-2.5 font-medium text-white hover:bg-white/10 transition">
+          Contact Me
+        </a>
+      </div>
+    </div>
+
+
+    <div class="hidden md:block">
+      <div class="rounded-2xl bg-white/10 backdrop-blur p-6 shadow-xl ring-1 ring-white/20">
+        <ul class="space-y-3 text-indigo-50">
+          <li class="flex items-start gap-3">
+            <span class="mt-1 inline-block h-2 w-2 rounded-full bg-emerald-300"></span>
+            <span><strong>18+ years</strong> building ERP, CRM & HR solutions</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="mt-1 inline-block h-2 w-2 rounded-full bg-emerald-300"></span>
+            <span><strong>App modernization</strong> & cloud-ready architectures</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="mt-1 inline-block h-2 w-2 rounded-full bg-emerald-300"></span>
+            <span><strong>Clean, maintainable code</strong> and on-time delivery</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section> -->
 
 <!-- About Me -->
 <section class="bg-white">
