@@ -8,7 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:portfolio-angular": "node dist/portfolio-angular/server/server.mjs",
-    "custom-publish": "ng build --configuration production --base-href 'https://<your-username>.github.io/<your-repo-name>/' && npx angular-cli-ghpages --dir=dist/portfolio-angular/browser"
+    "custom-publish": "ng build --configuration=production  --base-href='https://chandu2chandu1.github.io/portfolio-angular/' && npx angular-cli-ghpages --dir=dist/portfolio-angular/browser"
   },
   "prettier": {
     "overrides": [
